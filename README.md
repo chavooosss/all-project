@@ -1,4 +1,4 @@
-# Velican Gül — Developer Portfolio
+# Veli Ercan — Developer Portfolio
 
 **High school student · Distributed Systems · Cybersecurity · Rust · Python**  
 📍 Ankara, Turkey · 🔗 [GitHub](https://github.com/chavooosss) · HackerOne: active
