@@ -29,7 +29,7 @@ This project started as a Python prototype. After hitting the limits of Python f
 
 ## 🔒 Cybersecurity
 
-### SpecterAI — Autonomous Bug Bounty Agent
+### [SpecterAI](https://github.com/chavooosss/SpecterAI) — Autonomous Bug Bounty Agent
 *Python · LangGraph · FastAPI · React · HackerOne API*
 
 An AI agent that autonomously performs reconnaissance, scans targets, and generates structured vulnerability reports. Integrates with HackerOne and Intigriti platforms.
@@ -39,6 +39,16 @@ An AI agent that autonomously performs reconnaissance, scans targets, and genera
 - Scope validator prevents out-of-scope testing
 - React + Tailwind GUI with live terminal output
 - SQLite persistence for findings and sessions
+
+### [VaultScan](https://github.com/chavooosss/VaultScan) — AI-Powered Security Code Analyzer
+*Python · FastAPI · Claude · ChatGPT · Gemini · React*
+
+Multi-model security code analysis — Claude, ChatGPT, and Gemini review your code simultaneously and produce a consensus report. Bring your own API keys, bilingual (EN/TR).
+
+- Upload any code file or paste a snippet; all three AI models analyze in parallel
+- Consensus engine weighs findings across models and highlights disagreements
+- Detects: SQL injection, XSS, CSRF, hardcoded secrets, insecure deserialization, and 20+ other vulnerability classes
+- FastAPI backend, React frontend, BYOK (no key storage)
 
 ### SmartCUPP — Intelligent Wordlist Generator
 *Python · BloomFilter · Multiprocessing · Hashcat*
@@ -82,6 +92,21 @@ A fully local voice assistant for Linux with a layered service architecture.
 
 ---
 
+## 🎵 Music & AI
+
+### [Soundprint](https://github.com/chavooosss/soundprint) — Spotify Personality Analyzer
+*TypeScript · React 18 · Node.js · Spotify API · Gemini AI*
+
+Full-stack web app that turns Spotify listening history into a personality portrait. Eight-tab dashboard with physics-based visualizations and Gemini AI narrative.
+
+- **Music DNA** — animated canvas helix driven by 5 audio parameters (energy, valence, tempo, danceability, acousticness)
+- **Artist Network** — force-directed graph connecting artists by shared genre, canvas physics simulation
+- **Mood Scatter Plot**, **BPM Chart**, **Pattern Heatmap**, **Comparison Mode** (3 time ranges)
+- **AI Personality** — Gemini-powered character archetype analysis (Night Owl · Optimist · Deep Thinker · Flow State); API key stays server-side
+- OAuth CSRF protection, automatic token refresh, TypeScript throughout
+
+---
+
 ## 📊 Data & Finance
 
 ### BIST Trading Analysis Toolkit
@@ -95,15 +120,20 @@ A comprehensive toolkit for analyzing stocks on Borsa İstanbul (Turkish stock e
 - Individual stock deep-scan and correlation analysis
 - Used for real investment research
 
-### Spotify Analyzer
-*TypeScript · React · Node.js · Spotify API*
+---
 
-A full-stack web application that analyzes Spotify listening history and generates personality insights.
+## 🗒️ Personal Tools
 
-- React frontend with Recharts visualizations
-- Components: Music DNA, Mood Scatter Plot, Artist Network, Pattern Heatmap, BPM Chart
-- Node.js + TypeScript backend with Spotify OAuth
-- AI Personality card based on listening patterns
+### [günlük](https://github.com/chavooosss/gunluk) — Encrypted Personal Diary
+*Python · Flask · AES-256 · Claude AI · Spotify*
+
+A fully local, encrypted diary application. No cloud, no accounts, no data leaving the machine.
+
+- AES-256 encryption via PBKDF2-HMAC-SHA256 (480,000 iterations) — entries are unreadable without the password
+- Claude AI counseling tab — only the current day's entry is sent, only when you choose
+- Spotify OAuth integration — attach currently playing track to any entry
+- Auto-save (1.5 s debounce), mood tracker, tag system, archive search with modal preview
+- Keyboard shortcuts: Ctrl+S save, Ctrl+1–5 tab switch
 
 ---
 
@@ -151,6 +181,7 @@ A small business ERP system for inventory and stock tracking.
 **Languages:** Rust · Python · C++ · TypeScript  
 **Distributed Systems:** Raft consensus · Reed-Solomon erasure coding · Gossip protocol · mTLS · NAT traversal  
 **Security:** Penetration testing · Bug bounty (HackerOne) · Network reconnaissance · Responsible disclosure  
+**AI / ML:** LangGraph agents · Claude API · Gemini API · multi-model consensus systems  
 **Infrastructure:** Docker · Linux · CI/CD · SQLite · JWT/RBAC  
 **Tools:** nmap · amass · Shodan · dirsearch · Wireshark · Burp Suite
 
